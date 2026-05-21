@@ -1,6 +1,6 @@
 # Dan Mercede — Systems Architect
 
-**Runtime-enforced, governed AI operating systems.** I design executionenvironments where policy is evaluated at the moment of action, authority isenforced before state mutation, systems default to fail-closed, and everymaterial action produces an immutable audit receipt.
+**Runtime-enforced, governed AI operating systems.** I design execution environments where policy is evaluated at the moment of action, authority isenforced before state mutation, systems default to fail-closed, and everymaterial action produces an immutable audit receipt.
 
 > If it bypasses the receipt log or a gate, it does not ship.
 
