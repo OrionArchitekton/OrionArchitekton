@@ -1,41 +1,82 @@
-# Dan Mercede — Systems Architect
+# Dan Mercede — Founder & Systems Architect
 
-**Runtime-enforced, governed AI operating systems.** I design execution environments where policy is evaluated at the moment of action, authority isenforced before state mutation, systems default to fail-closed, and everymaterial action produces an immutable audit receipt.
+**Runtime-enforced AI execution control planes.** I build systems where policy is
+evaluated at the moment of action, authority is enforced before state mutation,
+failures close by default, and every material action emits an immutable audit receipt.
 
-> If it bypasses the receipt log or a gate, it does not ship.
+> If it bypasses a gate or the receipt log, it does not ship.
 
-* * *
+---
+
+### System boundary
+
+**Cosmocrat Core** stays narrow by design: mutation authority decisions, policy
+evaluation, fail-closed enforcement, receipt persistence, and audit queries.
+
+Execution systems — MCP servers, RAG pipelines, orchestration, dashboards, CI/CD,
+cloud delivery, and business workflows — belong outside core and integrate through
+governed gates.
+
+---
 
 ### Featured work (public)
 
-* **[cosmocrat-operator](https://github.com/OrionArchitekton/cosmocrat-operator)** · RustGoverned operator plane for AI-executed code. Replaces autonomous AI coding with a`PLAN → EXECUTE → REVIEW → APPROVE` pipeline — five server-enforced human gates,per-task git worktrees, and an append-only Chronicle. No autonomous execution path exists.
-  
-* **[compound-intake-router](https://github.com/OrionArchitekton/compound-intake-router)** · JavaScriptWebhook intake pipeline: Claude classifies, deterministic config routes, SQLite logs anaudit trail. Every stage degrades gracefully — no silent drops. *AI classifies; rules route.*
-  
-* **[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · model routingDual-variant Gemma routing (fast-path + MoE synthesizer) for a publishing cadence engine.dev.to Gemma challenge submission.
-  
-* **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)** Reader-facing reference architectures for the Cosmocrat governed-AI control plane.
-  
+- **[cosmocrat-operator](https://github.com/OrionArchitekton/cosmocrat-operator)** · Rust  
+  Governed operator plane for AI-executed code. Replaces unsupervised AI coding with a
+  server-enforced `PLAN → EXECUTE → REVIEW → APPROVE` pipeline: five human gates,
+  per-task git worktrees, and an append-only Chronicle. No unsupervised mutation path exists.
 
-*Most production systems (control-plane core, gateways, knowledge vaults, ventureinfrastructure) are private — client and venture IP.*
+- **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)**  
+  Reader-facing reference architectures for the Cosmocrat governed-AI control plane.
+  Maps authority gates, receipt trails, failure boundaries, and integration surfaces.
 
-### The enforcement stack
+- **[compound-intake-router](https://github.com/OrionArchitekton/compound-intake-router)** · JavaScript  
+  Webhook-driven intake pipeline. Claude classifies, deterministic config routes,
+  and SQLite records the audit trail. Every stage degrades gracefully — no silent drops.
+  *AI classifies; rules route.*
+
+- **[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · model routing  
+  Dual-variant Gemma routing for a publishing cadence engine: fast-path classification
+  plus MoE-style synthesis. Built as a dev.to Gemma challenge submission.
+
+Public repos expose reference patterns and proofs. Production control planes,
+gateways, knowledge vaults, and venture infrastructure remain private by design.
+
+---
+
+### Enforcement model
 
 | Layer | Invariant |
-| --- | --- |
-| Authority Gate | Execution depends on authority — evaluated before state mutation |
-| Immutable Receipts | Mutation depends on attestation — receipts over logs |
-| Drift Guard | Behavior constrained across time — authority decays, no standing paths |
-| Gated Substrate | Capability removed, not restricted — isolation at the execution layer |
+|-------|-----------|
+| Authority Gate | No mutation occurs without evaluated authority |
+| Immutable Receipts | Every material action produces durable evidence |
+| Drift Guard | Authority expires; standing mutation paths are rejected |
+| Gated Substrate | Capability is unavailable unless granted at runtime |
+
+---
 
 ### What I work on
 
-Governed AI control planes · agent-native systems and **MCP (Model Context Protocol)**servers · RAG / retrieval architectures · multi-cloud delivery (Vertex AI, Azure OpenAI,AWS) with IaC, CI/CD, and security architecture.
+Governed AI control planes · agent-native systems · **MCP (Model Context Protocol)**
+servers · RAG / retrieval architectures · authority-gated execution · audit-grade
+automation · secure multi-cloud delivery.
+
+I focus on systems where AI can act only through explicit authority, bounded capability,
+and observable runtime enforcement.
+
+---
 
 ### Stack
 
-`Rust` · `TypeScript` · `Python` · `SQL` · `Node.js` · `React/Next.js``Anthropic SDK` · `OpenAI SDK` · `MCP` · `LangChain/LangGraph` · `RAG` · `ClickHouse` · `Vertex AI` · `Azure OpenAI` · `AWS` · `Supabase/Postgres` · `Docker` · `Terraform`
+**Languages:** Rust · TypeScript · Python · SQL  
+**AI systems:** Anthropic SDK · OpenAI SDK · MCP · LangChain/LangGraph · RAG  
+**Data:** Postgres/Supabase · SQLite · ClickHouse  
+**Infra:** AWS · Azure OpenAI · Vertex AI · Docker · Terraform · CI/CD  
+**Frontend:** React · Next.js · Node.js
+
+---
 
 ### Elsewhere
 
-* Site: https://danmercede.com · LinkedIn: https://www.linkedin.com/in/danmercede
+- Site: [danmercede.com](https://danmercede.com)
+- LinkedIn: [linkedin.com/in/danmercede](https://www.linkedin.com/in/danmercede)
