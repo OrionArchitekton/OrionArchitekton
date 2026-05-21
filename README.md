@@ -14,7 +14,7 @@
   
 * **[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · model routingDual-variant Gemma routing (fast-path + MoE synthesizer) for a publishing cadence engine.dev.to Gemma challenge submission.
   
-* **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)**Reader-facing reference architectures for the Cosmocrat governed-AI control plane.
+* **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)** Reader-facing reference architectures for the Cosmocrat governed-AI control plane.
   
 
 *Most production systems (control-plane core, gateways, knowledge vaults, ventureinfrastructure) are private — client and venture IP.*
