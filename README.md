@@ -34,7 +34,7 @@ Governed AI control planes · agent-native systems and **MCP (Model Context Prot
 
 ### Stack
 
-`Rust` · `TypeScript` · `Python` · `SQL` · `Node.js` · `React/Next.js``Anthropic SDK` · `OpenAI SDK` · `MCP` · `LangChain/LangGraph` · `RAG` · `ClickHouse``Vertex AI` · `Azure OpenAI` · `AWS` · `Supabase/Postgres` · `Docker` · `Terraform`
+`Rust` · `TypeScript` · `Python` · `SQL` · `Node.js` · `React/Next.js``Anthropic SDK` · `OpenAI SDK` · `MCP` · `LangChain/LangGraph` · `RAG` · `ClickHouse` · `Vertex AI` · `Azure OpenAI` · `AWS` · `Supabase/Postgres` · `Docker` · `Terraform`
 
 ### Elsewhere
 
