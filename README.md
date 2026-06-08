@@ -116,6 +116,6 @@ San Diego · Open to hybrid · Remote · Relocation for the right architectural 
 Site:     danmercede.com
 LinkedIn: linkedin.com/in/danmercede
 GitHub:   github.com/OrionArchitekton
-Email:    dan.mercede@orionapexcapital.com
+Email:    dan@danmercede.com
 Location: San Diego, CA
 ```
