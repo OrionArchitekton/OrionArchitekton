@@ -56,7 +56,7 @@ Reader-facing reference architectures for the Cosmocrat governed-AI control plan
 **[compound-intake-router](https://github.com/OrionArchitekton/compound-intake-router)** · *JavaScript*
 Webhook-driven intake pipeline that classifies, enriches, routes, and logs inbound messages across a venture studio. Claude classifies, deterministic config routes, and SQLite records the audit trail. Every stage degrades gracefully — no silent drops. *AI classifies; rules route.*
 
-**[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · *MIT*
+**[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · *Python · MIT*
 Personal-brand publishing cadence engine with dual-variant Gemma 4 routing: an e4b fast-path for classification plus a 26b MoE synthesizer. Submission for the dev.to Gemma 4 Challenge.
 
 *Public repos expose reference patterns and proofs. Production control planes, gateways, knowledge vaults, and venture infrastructure remain private by design.*
