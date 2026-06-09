@@ -13,7 +13,7 @@
 
 ---
 
-## 🎯 What I'm building
+## What I'm building
 
 A **governed-AI execution control plane** decomposed across four services so no component can self-authorize.
 
@@ -27,6 +27,8 @@ A **governed-AI execution control plane** decomposed across four services so no 
 The signing/identity layer is deliberately separated from policy/authority and from the UI. The adapter holds no signing keys. The kernel is the sole receipt/audit authority. This is the correct shape for a fail-closed governance system.
 
 I'm deliberate about what's enforced versus scaffolded. I can walk through exactly which controls are live today, which are stubbed, and the order I'd harden them. **Architecture and the live substrate are available for screen-share walkthrough under NDA.** Production repos are private.
+
+The enforcement model also ships as public, runnable code — **[failclosed](https://github.com/OrionArchitekton/failclosed)** applies the Authority Gate to the coding-agent merge boundary: distrust the reviewer's verdict, refuse `MERGE_READY` on unparseable or self-contradictory output.
 
 ---
 
@@ -69,20 +71,27 @@ The four-layer enforcement stack: *Authority Gate · Mutation Attestation · Dri
 
 ---
 
-## Public repos *(exploration artifacts)*
+## Public repos
 
-The work that pays the bills is private/self-hosted. These are small, scoped public artifacts:
+The production control planes are private/self-hosted. These are public.
 
-> ⚙️ **[compound-intake-router](https://github.com/OrionArchitekton/compound-intake-router)** · *TypeScript*
+**Flagship**
+
+> **[failclosed](https://github.com/OrionArchitekton/failclosed)** · *Python*
+> Fail-closed merge admission control for agent-written code. Runs an LLM reviewer, **distrusts its verdict**, and refuses `MERGE_READY` on unparseable, schema-invalid, or self-contradictory output. The Authority Gate and Immutable Receipts model, applied to the coding-agent merge boundary.
+
+**Supporting artifacts**
+
+> **[compound-intake-router](https://github.com/OrionArchitekton/compound-intake-router)** · *TypeScript*
 > Webhook-driven intake pipeline. Claude classifies, deterministic config routes, SQLite records the audit trail. Every stage degrades gracefully — no silent drops. *AI classifies; rules route.*
 
-> 🎵 **[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · *model routing*
+> **[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · *model routing*
 > Dual-variant Gemma routing for a publishing cadence engine: fast-path classification + MoE-style synthesis. Built as a dev.to Gemma challenge submission.
 
-> 📐 **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)**
+> **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)**
 > Reader-facing reference architectures for governed-AI control planes. Maps authority gates, receipt trails, failure boundaries, and integration surfaces.
 
-> 🗄️ **[cosmocrat-operator](https://github.com/OrionArchitekton/cosmocrat-operator)** · *archived prototype*
+> **[cosmocrat-operator](https://github.com/OrionArchitekton/cosmocrat-operator)** · *archived prototype*
 > Early Phase 1 exploration of the operator-plane gating model. **Archived** — superseded after the R1 Operator Plane Split. Production work is private/self-hosted.
 
 *Production control planes, gateways, knowledge vaults, observability infrastructure, and venture systems remain private by design.*
@@ -97,7 +106,7 @@ The work that pays the bills is private/self-hosted. These are small, scoped pub
 | AI systems    | Anthropic SDK · OpenAI SDK · MCP · LangChain / LangGraph · RAG · GraphRAG · Vertex AI · Azure OpenAI |
 | Observability | Self-hosted Langfuse · ClickHouse · OPA · custom telemetry                                         |
 | Data          | Postgres / Supabase · SQLite · ClickHouse · Neo4j + Cognee                                         |
-| Infra         | AWS · Docker · Terraform · CI/CD · multi-node Tailscale mesh                                       |
+| Infra         | AWS · Railway · Docker · Terraform · CI/CD · multi-node Tailscale mesh                             |
 | Frontend      | React · Next.js · Node.js · *(production on Vercel)*                                               |
 
 ---
