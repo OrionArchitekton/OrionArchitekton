@@ -82,17 +82,14 @@ The production control planes are private/self-hosted. These are public.
 
 **Supporting artifacts**
 
-> **[compound-intake-router](https://github.com/OrionArchitekton/compound-intake-router)** · *TypeScript*
-> Webhook-driven intake pipeline. Claude classifies, deterministic config routes, SQLite records the audit trail. Every stage degrades gracefully — no silent drops. *AI classifies; rules route.*
+> **[algorithm-reviews](https://github.com/OrionArchitekton/algorithm-reviews)** · *TypeScript · live*
+> A governed agent that fact-checks claims against the live web, decides which sources are **admissible** (fail-closed), and ships a cryptographically **signed review receipt** — verdict, timestamped citations, dissent, and an ECDSA signature anyone can verify. Every admit/reject decision streams in real time. Admission control and attestation, end to end.
 
-> **[cadence-tracker](https://github.com/OrionArchitekton/cadence-tracker)** · *model routing*
-> Dual-variant Gemma routing for a publishing cadence engine: fast-path classification + MoE-style synthesis. Built as a dev.to Gemma challenge submission.
+> **[proctor](https://github.com/OrionArchitekton/proctor)** · *TypeScript*
+> An agent that QAs other agents. It learns each AI automation's behavioral contract, catches when a model or prompt change silently breaks it, self-heals the tests when the change is legitimate, and escalates real regressions to a human. Drift caught at the behavioral boundary, not after the fact.
 
-> **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)**
-> Reader-facing reference architectures for governed-AI control planes. Maps authority gates, receipt trails, failure boundaries, and integration surfaces.
-
-> **[cosmocrat-operator](https://github.com/OrionArchitekton/cosmocrat-operator)** · *archived prototype*
-> Early Phase 1 exploration of the operator-plane gating model. **Archived** — superseded after the R1 Operator Plane Split. Production work is private/self-hosted.
+> **[cosmocrat-reference-architectures](https://github.com/OrionArchitekton/cosmocrat-reference-architectures)** · *docs*
+> Reader-facing reference architectures for governed-AI control planes — product boundary, deployment composition, authority gates, receipt trails, and failure boundaries. Docs only.
 
 *Production control planes, gateways, knowledge vaults, observability infrastructure, and venture systems remain private by design.*
 
