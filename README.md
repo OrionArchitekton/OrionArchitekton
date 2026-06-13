@@ -95,6 +95,30 @@ The production control planes are private/self-hosted. These are public.
 
 ---
 
+## Open-source contributions
+
+I contribute upstream to the MCP and AI-observability tooling I build on — fixes and test coverage, in-domain.
+
+**Merged**
+
+> **[punkpeye/fastmcp#275](https://github.com/punkpeye/fastmcp/pull/275)** · *merged* · ⭐3.2k
+> `/health` and `/ready` only matched `GET`, so `HEAD` probes from load balancers and
+> orchestrators fell through to a `404` — the endpoint read as *down*. Extended both
+> guards to answer `HEAD` (headers-only, status preserved, per HTTP/1.1). Closes #178.
+
+**Open · under review**
+
+> **[Arize-ai/openinference#3238](https://github.com/Arize-ai/openinference/pull/3238)** · ⭐1k
+> The Agno workflow instrumentor serialized Pydantic response content with `str()` —
+> Python `repr` in traces instead of JSON. Switched to `model_dump_json()` with a safe
+> `str()` fallback, plus regression tests. Closes #3235.
+
+> **[truera/trulens#2536](https://github.com/truera/trulens/pull/2536)** · ⭐3.4k — Bedrock provider capability tests.
+
+> **[truera/trulens#2537](https://github.com/truera/trulens/pull/2537)** · ⭐3.4k — Cortex provider capability tests.
+
+---
+
 ## Stack
 
 | Layer         | Tools                                                                                              |
