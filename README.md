@@ -106,12 +106,12 @@ I contribute upstream to the MCP and AI-observability tooling I build on — fix
 > orchestrators fell through to a `404` — the endpoint read as *down*. Extended both
 > guards to answer `HEAD` (headers-only, status preserved, per HTTP/1.1). Closes #178.
 
-**Open · under review**
-
-> **[Arize-ai/openinference#3238](https://github.com/Arize-ai/openinference/pull/3238)** · ⭐1k
+> **[Arize-ai/openinference#3238](https://github.com/Arize-ai/openinference/pull/3238)** · *merged* · ⭐1k
 > The Agno workflow instrumentor serialized Pydantic response content with `str()` —
 > Python `repr` in traces instead of JSON. Switched to `model_dump_json()` with a safe
 > `str()` fallback, plus regression tests. Closes #3235.
+
+**Open · under review**
 
 > **[truera/trulens#2536](https://github.com/truera/trulens/pull/2536)** · ⭐3.4k — Bedrock provider capability tests.
 
