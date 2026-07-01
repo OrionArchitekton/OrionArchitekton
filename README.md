@@ -1,6 +1,12 @@
+<p align="center">
+  <img src="./assets/github-profile-header.png" alt="Dan Mercede, AI Engineering: governed agents, audit trails, controlled execution" width="100%">
+</p>
+
 # Dan Mercede · Founder & Systems Architect
 
-**AI Solutions Architect · Forward Deployed Engineer · Founding Engineer.** I build systems where AI can act only through explicit, evaluated authority.
+I build systems where AI can act only through explicit, evaluated authority.
+
+**AI Solutions Architect · Forward Deployed Engineer · AI Engineer · Founding Engineer**
 
 ![Rust](https://img.shields.io/badge/Rust-1a1a1a?style=flat&logo=rust&logoColor=B7410E)
 ![TypeScript](https://img.shields.io/badge/TypeScript-1a1a1a?style=flat&logo=typescript&logoColor=3178C6)
@@ -8,7 +14,7 @@
 ![ClickHouse](https://img.shields.io/badge/ClickHouse-1a1a1a?style=flat&logo=clickhouse&logoColor=FFCC01)
 ![Anthropic](https://img.shields.io/badge/Anthropic_Claude-1a1a1a?style=flat&logo=anthropic&logoColor=D97757)
 
-> Merged fixes upstream into **[fastmcp](https://github.com/punkpeye/fastmcp/pull/275)** (3.2k★) and **[Arize openinference](https://github.com/Arize-ai/openinference/pull/3238)** (1.1k★). **Six** governed-AI systems shipped end to end for hackathons, most in a matter of days. Range: a Rust Ed25519 signing service to a provider-aware JSON-Schema CI linter.
+> Merged fixes upstream into **[fastmcp](https://github.com/punkpeye/fastmcp/pull/275)** (3.2k★) and **[Arize openinference](https://github.com/Arize-ai/openinference/pull/3238)** (1.1k★). **Six** governed-AI systems shipped end to end under competition constraints, most in a matter of days. Range: a Rust Ed25519 signing service to a provider-aware JSON-Schema CI linter.
 
 **Architecting fail-closed AI execution governance.** Runtime authority. Immutable receipts. Policy evaluated at the moment of action.
 
@@ -78,7 +84,7 @@ Also public: **[orion-skills](https://github.com/OrionArchitekton/orion-skills)*
 
 ---
 
-## Enforcement model *(doctrine)*
+## Enforcement model
 
 | Layer                  | Invariant                                               |
 | ---------------------- | ------------------------------------------------------- |
@@ -99,7 +105,8 @@ Full doctrine and reference architectures at **[danmercede.com](https://danmerce
 |-------|-------|
 | **Languages** | Rust · TypeScript · Python · SQL |
 | **AI systems** | Anthropic SDK · OpenAI SDK · MCP · LangChain / LangGraph · RAG / GraphRAG · Vertex AI · Azure OpenAI |
-| **Observability** | Self-hosted Langfuse · ClickHouse · OPA · custom telemetry |
+| **Governance** | OPA · authority gates · policy packs · receipt schemas |
+| **Observability** | Self-hosted Langfuse · ClickHouse · custom telemetry |
 | **Data** | Postgres · Supabase · SQLite · ClickHouse · Neo4j + Cognee |
 | **Infra** | AWS · Railway · Docker · Terraform · CI/CD · multi-node Tailscale mesh |
 | **Frontend** | React · Next.js · Node.js (production on Vercel) |
@@ -108,9 +115,10 @@ Full doctrine and reference architectures at **[danmercede.com](https://danmerce
 
 ## Currently open to
 
-**AI Solutions Architect · Forward Deployed Engineer · AI Engineer · Founding Engineer** roles in agentic systems, runtime governance, observability for AI, and enterprise AI platforms.
+**AI Solutions Architect · Forward Deployed Engineer · AI Engineer · Founding Engineer**  
+Agentic systems · runtime governance · AI observability · enterprise AI platforms
 
-San Diego · Open to hybrid · Remote · Relocation for the right architectural opportunity.
+San Diego · Remote · Hybrid · Relocation for the right architectural opportunity
 
 ---
 
