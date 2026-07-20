@@ -1,10 +1,4 @@
-# Dan Mercede
-
-**Operator · AI Product Builder · Systems Architect**
-
-*Ambiguous workflow → deployed product → honest evaluation → operating proof*
-
-<!-- hero image slot: embed the new operator-builder banner here when the asset lands, e.g. assets/hero-operator-builder.png; the old governance banner stays unembedded -->
+![Dan Mercede. Operator, AI product builder, systems architect. Ambiguous workflow to deployed product to honest evaluation to operating proof.](assets/hero-operator-builder.png)
 
 I turn ambiguous operating workflows into narrow AI products, and carry them from product thesis through working system, evaluation, and operational proof. The full path: finding the decision worth improving, building the product and the infrastructure under it, and proving where it works, where it fails, and where it should abstain.
 
