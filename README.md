@@ -14,7 +14,7 @@ I turn ambiguous operating workflows into narrow AI products, and carry them fro
 
 **[codex-rule-ledger](https://github.com/OrionArchitekton/codex-rule-ledger)** · A diff shows what an agent changed, not which instruction chain governed the change, and confusing missing evidence with compliance corrupts review. The ledger first asks whether the supplied evidence makes any verdict admissible at all; deterministic TypeScript alone owns verdicts and hashes, the LLM only proposes source-linked semantics, and verification runs lint, typecheck, 77 tests, the production build, and five Chromium E2E flows behind a keyless, deliberately recorded-case-only live demo.
 
-**[engram](https://github.com/OrionArchitekton/engram)** · Agents forget everything between sessions, or "solve" it by stuffing the whole chat history into context. Engram treats memory as an engineering problem (typed memories with decay half-lives, budget-bounded recall through a property-tested packer, contradiction adjudication) and its backend runs live on Alibaba Cloud Function Compute behind engram.orionbot.online, caveat stated plainly: the instance stores memories in /tmp SQLite, so recycling resets the store.
+**[engram](https://github.com/OrionArchitekton/engram)** · Agents forget everything between sessions, or "solve" it by stuffing the whole chat history into context. Engram treats memory as an engineering problem (typed memories with decay half-lives, budget-bounded recall through a property-tested packer, contradiction adjudication) and its backend runs live on Alibaba Cloud Function Compute behind [engram.orionbot.online](https://engram.orionbot.online), caveat stated plainly: the instance stores memories in /tmp SQLite, so recycling resets the store.
 
 ---
 
@@ -26,13 +26,13 @@ Start from a named user and the specific decision they get wrong today. Put mode
 
 ## Foundational systems
 
-**[failclosed](https://github.com/OrionArchitekton/failclosed)** runs an LLM code reviewer and then refuses to trust it: unparseable, schema-invalid, or self-contradictory reviewer output never yields MERGE_READY. Its own label: a narrow, runnable demonstration of one principle. **[proctor](https://github.com/OrionArchitekton/proctor)** QAs non-deterministic AI automations: it learns each automation's behavioral contract, classifies drift as real regression, legitimate evolution, or flake, and pauses on a durable human approval before any mutation; all four surfaces verified live against a UiPath Labs tenant, and the README calls it what it is, a working MVP with disclosed limits. **[schemafit](https://github.com/OrionArchitekton/schemafit)** lints structured-output and tool schemas against each provider's documented constraints in CI, no model calls and no API key: across 50 real public schemas, 44 (88%) would be rejected by at least one major provider.
+**[failclosed](https://github.com/OrionArchitekton/failclosed)** runs an LLM code reviewer and then refuses to trust it: unparseable, schema-invalid, or self-contradictory reviewer output never yields MERGE_READY. Its own label: a narrow, runnable demonstration of one principle. **[proctor](https://github.com/OrionArchitekton/proctor)** QAs non-deterministic AI automations, a UiPath AgentHack 2026 finalist: it learns each automation's behavioral contract, classifies drift as real regression, legitimate evolution, or flake, and pauses on a durable human approval before any mutation; all four surfaces verified live against a UiPath Labs tenant, and the README calls it what it is, a working MVP with disclosed limits. **[schemafit](https://github.com/OrionArchitekton/schemafit)** lints structured-output and tool schemas against each provider's documented constraints in CI, no model calls and no API key: across 50 real public schemas, 44 (88%) would be rejected by at least one major provider.
 
 ---
 
 ## Production and upstream proof
 
-The production substrate is private: a decision kernel with Chronicle receipts, OPA policy, and Langfuse tracing runs live on a multi-node Tailscale cluster, in continuous personal operation for months, with the operator UI, authority adapter, and Rust signing service built and integration-tested alongside it. Upstream, in the tooling I build on: fastmcp#275, merged, so /health and /ready answer HEAD probes from load balancers; Arize openinference#3238, merged, so Agno traces carry real JSON instead of Python repr; and an open PR against acryldata/mcp-server-datahub (#140), accounting for omitted documents in grep_documents results.
+The production substrate is private: a decision kernel with Chronicle receipts, OPA policy, and Langfuse tracing runs live on a multi-node Tailscale cluster, in continuous personal operation for months, with the operator UI, authority adapter, and Rust signing service built and integration-tested alongside it. Upstream, in the tooling I build on: [punkpeye/fastmcp#275](https://github.com/punkpeye/fastmcp/pull/275), merged, so /health and /ready answer HEAD probes from load balancers; [Arize openinference#3238](https://github.com/Arize-ai/openinference/pull/3238), merged, so Agno traces carry real JSON instead of Python repr; and an open PR against [acryldata/mcp-server-datahub#140](https://github.com/acryldata/mcp-server-datahub/pull/140), accounting for omitted documents in grep_documents results.
 
 ---
 
@@ -40,6 +40,6 @@ The production substrate is private: a decision kernel with Chronicle receipts, 
 
 Rust, TypeScript, Python, SQL. Anthropic and OpenAI SDKs, MCP, LangChain and LangGraph, Vertex AI. Self-hosted Langfuse and ClickHouse for observability; Postgres, Supabase, SQLite, Neo4j for data; Docker, Terraform, AWS, Vercel, and a multi-node Tailscale mesh.
 
-Site and writing: [danmercede.com](https://danmercede.com) · LinkedIn: [linkedin.com/in/danmercede](https://linkedin.com/in/danmercede) · Email: dan@danmercede.com · San Diego, CA. Best technical read: the [notary README](https://github.com/OrionArchitekton/notary).
+Site and writing: [danmercede.com](https://danmercede.com) · Working log: [danmercede.online](https://danmercede.online) · LinkedIn: [linkedin.com/in/danmercede](https://linkedin.com/in/danmercede) · Email: [dan@danmercede.com](mailto:dan@danmercede.com) · San Diego, CA. Best technical read: the [notary README](https://github.com/OrionArchitekton/notary).
 
 If your team is staring at a workflow that is valuable, messy, and unowned, that is the work I like to own.
