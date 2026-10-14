@@ -1,4 +1,4 @@
-![Dan Mercede. Operator, AI product builder, systems architect. Ambiguous workflow to deployed product to honest evaluation to operating proof.](assets/hero-operator-builder.png)
+![Dan Mercede. Operator and systems builder. Ambiguous workflow to deployed product to honest evaluation to operating proof.](assets/hero-operator-builder.png)
 
 I turn ambiguous operating workflows into narrow AI products, and carry them from product thesis through working system, evaluation, and operational proof. The full path: finding the decision worth improving, building the product and the infrastructure under it, and proving where it works, where it fails, and where it should abstain.
 
@@ -57,7 +57,7 @@ Agents forget everything between sessions, or "solve" it by stuffing the whole c
 
 ## Production and upstream proof
 
-The production substrate is private: a decision kernel with Chronicle receipts, OPA policy, and Langfuse tracing runs live on a multi-node Tailscale cluster, in continuous personal operation for months, with the operator UI, authority adapter, and Rust signing service built and integration-tested alongside it. Upstream, in the tooling I build on:
+My production system is private and has been in continuous personal operation for months. Upstream, in the tooling I build on:
 
 - [punkpeye/fastmcp#275](https://github.com/punkpeye/fastmcp/pull/275), merged: /health and /ready answer HEAD probes from load balancers.
 - [Arize-ai/openinference#3238](https://github.com/Arize-ai/openinference/pull/3238), merged: Agno traces carry real JSON instead of Python repr.
