@@ -4,6 +4,13 @@ I turn ambiguous operating workflows into narrow AI products, and carry them fro
 
 ---
 
+## Cosmocrat OS
+
+An AI operating system you remain in charge of. Coordinate agents, carry task context between sessions, and recover the results of their work.
+[Explore the Orion tools](https://www.cosmocrat.ai/tools): Orion PM, Orion Browser, Orion Phone, Orion Handoff, Orion Worktree Report. Orion Results and Orion Starter are previews.
+
+---
+
 ## Selected recent builds
 
 #### [notary](https://github.com/OrionArchitekton/notary)
